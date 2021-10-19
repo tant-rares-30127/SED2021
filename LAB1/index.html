@@ -10,21 +10,24 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script type="module" src="index.js"></script>
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script src="index.js"></script>
   </head>
 
   <body>
     <div class="wrapper">
       <div class="buttons">
-        <button class="button">Add member</button>
-        <button class="button">Remove member</button>
+        <button class="button" onclick="addMember()">Add person</button>
+        <button class="button" onclick="deleteMember()">Remove person</button>
       </div>
       <div class="members">
-        <ul class="persons-list">
-          <li class="fa fa-male fa-5x"></li>
-          <li class="fa fa-male fa-5x"></li>
-          <li class="fa fa-male fa-5x"></li>
-        </ul>
+        <ul class="persons-list" id="personsList"></ul>
+      </div>
+      <div class="led">
+        <span class="fa fa-circle fa-3x"></span>
       </div>
     </div>
   </body>
